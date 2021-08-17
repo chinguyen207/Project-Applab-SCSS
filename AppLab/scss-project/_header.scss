@@ -1,0 +1,90 @@
+
+header {
+    @include width (100%);
+    padding: 90px 0 10px 0;
+    .navbar-nav {
+        margin-right: 50px;
+        .nav-item {
+            @media screen and(max-width: 768px) {
+                text-align: center;
+            }
+            @media screen and(max-width: 540px) {
+                @include mgl (62px);
+            }
+            @media screen and(max-width: 415px) {
+                @include mgl (62px);
+                font-size: 16px;
+            }
+            @media screen and(max-width: 376px) {
+                @include mgl (87px);
+            }
+            @media screen and(max-width: 320px) {
+                @include mgl (50px);
+            }
+            @media screen and(max-width: 280px) {
+                @include mgl (70px);
+            }
+            margin: 0 15px;
+            .nav-link {
+                @media screen and(max-width: 1024px) {
+                    font-size: 18px;
+                }
+                @include color (#242f51 !important);
+                font: {
+                    weight: 500;
+                    size: 20px;
+                }
+                &:hover {
+                    @include color (darkorange !important);
+                    transform: scale(1.1);
+                    transition: all .15s linear;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 3px;
+                    @include background (#fcae61);
+                }
+                &:hover:before {
+                    @include width (100%);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+    .btn-outline-success {
+        @media screen and (max-width: 768px) {
+            @include mgl (230px);
+        }
+        @media screen and (max-width: 540px) {
+            @include mgl (168px);
+        }
+        @media screen and (max-width: 415px) {
+            @include mgl (103px);
+        }
+        @media screen and (max-width: 376px) {
+            @include mgl (97px);
+        }
+        @media screen and (max-width: 360px) {
+            @include mgl (85px);
+        }
+        @media screen and (max-width: 320px) {
+            @include mgl (50px);
+        }
+        @media screen and (max-width: 280px) {
+            @include mgl (37px);
+        }
+        @include color (#fff !important);
+        @include background (#2500f9 !important);
+        padding: 16px;
+        border-radius: 35px;
+        font-weight: 600;
+        @include width (163px);
+        &:hover {
+            @include background (#2006b8 !important);
+        }
+    }
+}
+

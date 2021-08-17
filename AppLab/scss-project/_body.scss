@@ -1,0 +1,3392 @@
+
+    .banner {
+        background: {
+            image: url('/assets/img/banner.png');
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+        &-text h1 {
+            @media screen and(max-width: 1024px) {
+                font: {
+                    size: 48px;
+                    weight: 650;
+                }
+                @include width (87%);
+                @include mgt (170px);
+            }
+            @media screen and(max-width: 768px) {
+                font-size: 47px;
+                @include width (87%);
+                @include mgt (170px);
+            }
+            @media screen and(max-width: 540px) {
+                font-size: 40px;
+                text-align: center;
+                @include mgl (30px);
+            }
+            @media screen and(max-width: 415px) {
+                font-size: 35px;
+                text-align: center;
+                @include mgl (30px);
+            }
+            @media screen and(max-width: 376px) {
+                @include mgl (25px);
+                font-size: 30px;
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (22px);
+                font-size: 30px;
+            }
+            @media screen and(max-width: 320px) {
+                @include mgl (25px);
+                font-size: 27px;
+            }
+            @media screen and(max-width: 280px) {
+                @include mgl (20px);
+                font-size: 25px;
+            }
+            font: {
+                size: 60px;
+                weight: 700;
+            }
+            margin: 30px 0;
+            color: $Color;
+            @include mgt (400px);
+            line-height: 1.2;
+        }   
+        &-text p {
+            @media screen and(max-width: 1024px) {
+                font-size: 16px;
+            }
+            @media screen and(max-width: 540px) {
+                font-size: 16px;
+                text-align: center;
+                @include width (76%);
+                @include mgl (60px);
+            }
+            @media screen and(max-width: 415px) {
+                font-size: 14px;
+                text-align: center;
+                @include width (76%);
+                @include mgl (48px);
+            }
+            @media screen and(max-width: 376px) {
+                @include mgl (45px);
+                font-size: 13px;
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (40px);
+                font-size: 13px;
+            }
+            @media screen and(max-width: 320px) {
+                @include mgl (45px);
+                font-size: 13px;
+            }
+            @media screen and(max-width: 280px) {
+                @include mgl (30px);
+                font-size: 12px;
+            }
+            @include colorVsfont ($Color, 18px);
+            @include width (79%);
+            margin-bottom: 40px;
+        }
+        &-text a {
+            @media screen and(max-width: 1024px) {
+                font-size: 16px;
+            }
+            @media screen and(max-width: 768px) {
+                font-size: 16px;
+            }
+            @media screen and (max-width: 540px) {
+                @include mgb (20px);
+                text-align: center;
+                @include mgl (25px);
+                display: block;
+                font-size: 16px;
+             }
+            @media screen and (max-width: 415px) {
+               @include mgb (20px);
+               text-align: center;
+               @include mgl (25px);
+               display: block;
+               font-size: 14px;
+            }
+            @media screen and (max-width: 412px) {
+                @include mgl (15px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (40px);
+                font-size: 13px;
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (25px);
+            }
+            @media screen and(max-width: 320px) {
+                @include mgl (38px);
+            }
+            @media screen and(max-width: 280px) {
+                font-size: 12px;
+            }
+            margin-right: 32px;
+            color: $br;
+            text-decoration: none;
+        }
+        &-button .btn-outline-success {
+            @media screen and(max-width: 1024px) {
+                font-size: 16px;
+                @include width (30%);
+            }
+            @media screen and(max-width: 768px) {
+                font-size: 16px;
+                @include width (36%);
+            }
+            @media screen and(max-width: 415px) {
+                font-size: 14px;
+            }
+            @media screen and(max-width: 376px) {
+                font-size: 13px;
+                @include width (46%);
+                @include mgl (-10px);
+            }
+            @media screen and(max-width: 320px) {
+                font-size: 13px;
+                @include width (46%);
+                @include mgl (0px);
+            }
+            @media screen and(max-width: 280px) {
+                font-size: 12px;
+                @include width (50%);
+                @include mgl (0px);
+            }
+            border-radius: $bdr;
+            @include ColorVsFontWeight ($WhiteColor !important, 600);
+            background-color: $br !important;
+            @include width (27%);
+            @include padding (15px);
+            &:hover {
+                @include background (#2006b8 !important);
+            }
+        }
+        img {
+            @media screen and(max-width: 1024px) {
+                @include width (115%);
+                @include mgl (-3px);
+                @include mgt (129px);
+            }
+            @media screen and(max-width: 768px) {
+                @include mgt (10px);
+            }
+            @media screen and(max-width: 540px) {
+                @include width (83%);
+                @include mgl (40px);
+            }
+            @media screen and (max-width: 415px) {
+                @include mgl (50px);
+                @include padding (48px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (30px);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (30px);
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (30px);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (5px);
+                @include width (100%);
+            }
+            @include width (88%);
+            @include padding (27px);
+            @include mgl (60px);
+        }
+        
+    }
+
+    .sponsor {
+        margin: 115px 0;
+        & p {
+            @media screen and(max-width: 1024px) {
+                font-size: 20px;
+            }
+            @media screen and(max-width: 768px) {
+                font-size: 20px;
+            }
+            @media screen and(max-width: 540px) {
+                font-size: 20px;
+                text-align: center;
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 18px;
+                @include mgt (-68px);
+            }
+            @media screen and (max-width: 412px) {
+                font-size: 18px;
+                @include mgt (-68px);
+            }
+            @media screen and (max-width: 376px) {
+                font-size: 15px;
+                @include mgt (-74px);
+                @include mgl (20px);
+            }
+            @media screen and (max-width: 360px) {
+                font-size: 13px;
+                @include mgt (-74px);
+                @include mgl (0px);
+            }
+            @media screen and (max-width: 320px) {
+                font-size: 13px;
+                @include mgt (-74px);
+                @include mgl (1px);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgt (-68px);
+                @include mgl (10px);
+                font-size: 12px;
+        }
+            color: $Color;
+            @include mgt (30px);
+            font: {
+                size: 18px;
+                weight: 400;
+            }
+            text-align: center;
+        }
+        & .owl-carousel img {
+            @media screen and (max-width: 1024px) {
+                @include mgl (60px);
+                @include mgt (15px);
+            }
+            @media screen and (max-width: 768px) {
+                @include mgl (-150px);
+                @include mgt (15px);
+            }
+            @media screen and (max-width: 540px) {
+                @include mgl (35px);
+            }
+            @media screen and (max-width: 415px) {
+                @include mgl (40px);
+                @include mgt (15px);
+            }
+            @media screen and (max-width: 412px) {
+                @include mgl (10px);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (30px);
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (30px);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (97px);
+                @include width (30%);
+            }
+            @include width (50%);
+            margin: 0px 30px;
+            @include mgt (10px);  
+        }
+        & .owl-stage {
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+    }
+
+    .features {
+        @include width (100%);
+        @include padding (60px 0);
+        & .img-fluid {
+            @media screen and (max-width: 1024px) {
+                @include mgt (320px);
+                @include mgl (-45px);
+            }
+            @media screen and (max-width: 768px) {
+                @include mgt (275px);
+                @include mgl (-31px);
+            }
+            @media screen and (max-width: 540px) {
+                @include mgl (15px);
+                @include width (85%);
+                @include mgt (30px);
+            }
+            @media screen and(max-width: 415px) {
+                @include mgl (20px);
+                @include mgt (-30px);
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (15px);
+                @include mgt (-30px);
+            }
+            @media screen and(max-width: 320px) {
+                @include mgl (15px);
+                @include mgt (-30px);
+            }
+            @media screen and(max-width: 280px) {
+                @include mgl (20px);
+                @include mgt (-30px);
+            }
+        }
+        & h1 {
+            @media screen and (max-width: 1024px) {
+                font: {
+                    size: 48px;
+                    weight: 650;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                font: {
+                    size: 45px;
+                    weight: 650;
+                }
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 40px;
+                text-align: center;
+                @include mgl (10px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 35px;
+                @include mgl (-1px);
+                @include width (100%);
+                text-align: center;
+                @include mgt (-5px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (0px);
+                font-size: 30px;
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (1px);
+                font-size: 30px;
+            }
+            @media screen and(max-width: 320px) {
+                @include mgl (10px);
+                @include width (94%);
+                font-size: 27px;
+            }
+            @media screen and(max-width: 280px) {
+                @include mgl (10px);
+                @include width (94%);
+                font-size: 25px;
+            }
+            color: $Color;
+            line-height: $lh;
+            font: {
+                size: 36px;
+                weight: 700;
+            }
+        }
+        & p {
+            @media screen and (max-width: 1024px) {
+                font-size: 16px;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                @include width (100%);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 16px;
+                text-align: center;
+                @include width (75%);
+                @include mgl (65px);
+             }
+            @media screen and (max-width: 415px) {
+               font-size: 14px;
+               text-align: center;
+               @include width (75%);
+               @include mgl (45px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (42px);
+                font-size: 13px;
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (0px);
+                @include width (100%);
+                font-size: 13px;
+            }
+            @media screen and(max-width: 320px) {
+                @include mgl (0px);
+                font-size: 13px;
+            }
+            @media screen and(max-width: 280px) {
+                @include mgl (0px);
+                font-size: 12px;
+            }
+            font: {
+                size: 18px;
+                weight: 400;
+            }
+            @include width (75%);
+            color: $Color;
+            @include mgt (40px);
+        }
+        & .item-1 .h4-1 img {
+            @media screen and (max-width: 1024px) {
+                @include mgl (-20px);
+            }
+            @media screen and (max-width: 736px) {
+                @include mgl (138px);
+            }
+            @media screen and (max-width: 540px) {
+                @include mgl (208px);
+            }
+            @media screen and (max-width: 415px) {
+                @include mgl (145px);
+            }
+            @media screen and (max-width: 412px) {
+                padding-left: 5px;
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (125px);
+                @include width (20%);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (130px);
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (115px);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (90px);
+                @include width (25%);
+            }
+            @include mgt (77px);
+        }
+        & .item-h4-1 h4 {
+            @media screen and (max-width: 1024px) {
+                font-size: 20px;
+                @include mgl (-22px);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 20px;
+                @include mgl (2px);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 20px;
+                @include mgl (170px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 18px;
+                @include width (72%);
+                text-align: center;
+                @include mgl (50px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (45px);
+                font-size: 15px;
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (50px);
+                font-size: 15px;
+            }
+            @media screen and(max-width: 320px) {
+                @include mgl (48px);
+                font-size: 15px;
+            }
+            @media screen and(max-width: 280px) {
+                @include mgl (5px);
+                font-size: 15px;
+                @include width (100%);
+            }
+            @include ColorVsFontWeight ($PinkColor !important, 650);
+            @include width (105%);
+            @include padding (3px);
+            @include mgt (50px);
+            @include mgl (-50px);
+        }
+        & .item-h4-1 p {
+            @media screen and (max-width: 1024px) {
+                font-size: 16px;
+                @include width (95%);
+                @include mgl (-20px);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                @include mgl (10px);
+                @include width (125%);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 16px;
+                text-align: center;
+                @include width (51%);
+                @include mgl (120px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 14px;
+                text-align: center;
+                margin-left: 90px;
+                width: 55%;
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (70px);
+                font-size: 13px;
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (60px);
+                font-size: 13px;
+                @include width (63%);
+            }
+            @media screen and(max-width: 320px) {
+                @include mgl (45px);
+                font-size: 13px;
+                @include width (72%);
+                text-align: center;
+            }
+            @media screen and(max-width: 280px) {
+                @include mgl (40px);
+                font-size: 12px;
+                @include width (72%);
+                text-align: center;
+            }
+            @include mgt (10px);
+            @include mgl (-45px);
+        }
+        & .item-1 .h4-2 img {
+            @media screen and (max-width: 1024px) {
+                @include mgl (-20px);
+            }
+            @media screen and (max-width: 736px) {
+                @include mgl (130px);
+            }
+            @media screen and (max-width: 540px) {
+                @include mgl (205px);
+            }
+            @media screen and (max-width: 415px) {
+                @include mgl (143px);
+            }
+            @media screen and (max-width: 412px) {
+                padding-left: 4px;
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (125px);
+                @include width (20%);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (130px);
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (120px);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (90px);
+                @include width (25%);
+            }
+            @include mgt (58px);
+        }
+        & .item-h4-2 h4 {
+            @media screen and (max-width: 1024px) {
+                font-size: 20px;
+                @include mgl (-22px);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 20px;
+                @include mgl (2px);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 20px;
+                @include mgl (195px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 18px;
+                @include width (72%);
+                text-align: center;
+                @include mgl (50px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (40px);
+                font-size: 15px;
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (50px);
+                font-size: 15px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (40px);
+                font-size: 15px;
+            }
+            @include ColorVsFontWeight ($XColor !important, 650);
+            @include mgt (40px);
+            @include mgl (-44px);
+        }
+        & .item-h4-2 p {
+            @media screen and (max-width: 1024px) {
+                font-size: 16px;
+                @include width (95%);
+                @include mgl (-20px);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                @include mgl (10px);
+                @include width (125%);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 16px;
+                text-align: center;
+                @include width (51%);
+                @include mgl (120px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 14px;
+                text-align: center;
+                margin-left: 90px;
+                width: 55%;
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (70px);
+                font-size: 13px;
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (60px);
+                font-size: 13px;
+                @include width (63%);
+            }
+            @media screen and(max-width: 320px) {
+                @include mgl (45px);
+                font-size: 13px;
+                @include width (72%);
+                text-align: center;
+            }
+            @media screen and(max-width: 280px) {
+                @include mgl (40px);
+                font-size: 12px;
+                @include width (72%);
+                text-align: center;
+            }
+            @include mgt (10px);
+            @include mgl (-42px);
+        }
+        & .item-1 .h4-3 img {
+            @media screen and (max-width: 1024px) {
+                @include mgl (-20px);
+            }
+            @media screen and (max-width: 736px) {
+                @include mgl (127px);
+            }
+            @media screen and (max-width: 540px) {
+                @include mgl (208px);
+            }
+            @media screen and (max-width: 415px) {
+                @include mgl (143px);
+            }
+            @media screen and (max-width: 412px) {
+                @include mgl (140px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (130px);
+                @include width (20%);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (130px);
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (118px);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (95px);
+                @include width (25%);
+            }
+            @include mgt (60px);
+        }
+        & .item-h4-3 h4 {
+            @media screen and (max-width: 1024px) {
+                font-size: 20px;
+                @include mgl (-22px);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 20px;
+                @include mgl (2px);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 20px;
+                @include mgl (190px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 18px;
+                @include width (72%);
+                text-align: center;
+                @include mgl (50px);
+            }
+            @media screen and (max-width: 376px) {
+                font-size: 15px;
+                @include width (72%);
+                text-align: center;
+                @include mgl (40px);
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (50px);
+                font-size: 15px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (45px);
+            }
+            @media screen and (max-width: 280px) {
+               font-size: 15px;
+               @include mgl (42px);
+            }
+            @include ColorVsFontWeight ($GreenColor !important, 650);
+            @include mgt (40px);
+            @include mgl (-39px);
+        }
+        & .item-h4-3 p {
+            @media screen and (max-width: 1024px) {
+                font-size: 16px;
+                @include width (95%);
+                @include mgl (-20px);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                @include mgl (10px);
+                @include width (125%);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 20px;
+                text-align: center;
+                @include width (63%);
+                @include mgl (85px);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 16px;
+                text-align: center;
+                @include width (51%);
+                @include mgl (120px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 14px;
+                text-align: center;
+                margin-left: 90px;
+                width: 55%;
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (70px);
+                font-size: 13px;
+            }
+            @media screen and(max-width: 360px) {
+                @include mgl (60px);
+                font-size: 13px;
+                @include width (63%);
+            }
+            @media screen and(max-width: 320px) {
+                @include mgl (45px);
+                font-size: 13px;
+                @include width (72%);
+                text-align: center;
+            }
+            @media screen and(max-width: 280px) {
+                @include mgl (40px);
+                font-size: 12px;
+                @include width (72%);
+                text-align: center;
+            }
+            @include mgt (10px);
+            @include mgl (-38px);
+        }
+        & .smart {
+            @include mgt (60px);
+            & h1 {
+                @media screen and (max-width: 1024px) {
+                    font: {
+                        size: 40px;
+                        weight: 650;
+                    }
+                    @include width (100%);
+                }
+                @media screen and (max-width: 768px) {
+                    font: {
+                        size: 40px;
+                        weight: 650;
+                    }
+                    @include width (91%);        
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 40px;
+                    @include width (91%);       
+                    @include mgl (20px); 
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 35px;
+                    @include width (107%);
+                    text-align: center;
+                    @include mgl (-2px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include width (80%);
+                    font-size: 30px;
+                    @include mgl (40px);
+                }
+                @media screen and (max-width: 360px) {
+                    @include width (84%);       
+                    @include mgl (32px); 
+                    font-size: 30px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include width (84%);       
+                    @include mgl (32px); 
+                    font-size: 27px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include width (84%);       
+                    @include mgl (32px); 
+                    font-size: 25px;
+                }
+                font: {
+                    size: 36px;
+                    weight: 700;
+                }
+                @include width (90%);
+                @include padding (6px);
+                border-right: 1.75px solid #bbbbbb;
+                @include mgl (-8px);
+                line-height: $lh;
+            }
+            & p {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    @include width (100%);
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (124%);
+                    @include mgl (-30px);
+                    @include mgt (75px);
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 16px;
+                    @include width (83%);
+                    @include mgl (50px);
+                    text-align: center;
+                    @include mgt (10px)
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                    @include width (111%);
+                    text-align: center;
+                    @include mgl (-9px);
+                    @include mgt (10px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include width (100%);
+                    font-size: 13px;
+                    @include mgt (20px);
+                    @include mgl (10px);
+                }
+                @media screen and (max-width: 360px) {
+                    @include width (104%);       
+                    @include mgl (3px); 
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (-10px);
+                    font-size: 13px;
+                    @include width (117%);
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (10px);
+                    font-size: 12px;
+                    @include width (102%);
+                }
+                font: {
+                    size: 17px;
+                    weight: 600;
+                }
+               color: $GrayColor; 
+               @include mgl (5px);
+               @include mgt (12px);
+               @include display (flex);
+               @include padding (15px);
+            }
+        }
+        & .smart-1 {
+            @include mgt (90px);
+            & img {
+                @media screen and (max-width: 540px) {
+                    @include mgl (205px);
+                }
+                @media screen and (max-width: 415px) {
+                    @include mgl (145px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (140px);
+                    @include width (20%);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (130px);
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (120px);
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (95px);
+                    @include width (25%);
+                }
+            }
+            & .item-h4-31 h4 {
+                @media screen and (max-width: 1024px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 20px;
+                    @include width (72%);
+                    text-align: center;
+                    @include mgl (75px);
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 18px;
+                    @include width (72%);
+                    text-align: center;
+                    @include mgl (64px);
+                }
+                @media screen and (max-width: 412px) {
+                    font-size: 18px;
+                    @include width (72%);
+                    text-align: center;
+                    @include mgl (60px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (60px);
+                    font-size: 15px;
+                }
+                @media screen and(max-width: 360px) {
+                    @include mgl (60px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (15px);
+                    font-size: 15px;
+                    @include width (100%);
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (20px);
+                }
+                @include ColorVsFontWeight ($PinkColor !important, 650);
+                @include mgt (30px);
+            }
+            & .item-h4-31 p {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    @include width (91%);
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (95%);
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 16px;
+                    @include width (51%);
+                    text-align: center;
+                    @include mgl (120px);
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                    text-align: center;
+                    margin-left: 90px;
+                    width: 55%;
+                }
+                @media screen and (max-width: 412px) {
+                    font-size: 14px;
+                    width: 63%;
+                    text-align: center;
+                    margin-left: 70px;
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (70px);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 360px) {     
+                    @include mgl (60px); 
+                    font-size: 13px;
+                    @include width (68%);
+                }
+                @media screen and (max-width: 320px) {     
+                    @include mgl (45px); 
+                    @include width (75%);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 280px) {     
+                    @include mgl (45px); 
+                    font-size: 12px;
+                }
+                @include mgt (10px);
+            }
+            & .item-h4-32 h4 {
+                @media screen and (max-width: 1024px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 20px;
+                    @include width (72%);
+                    text-align: center;
+                    @include mgl (75px);
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 18px;
+                    @include width (72%);
+                    text-align: center;
+                    @include mgl (60px);
+                }
+                @media screen and (max-width: 412px) {
+                    font-size: 18px;
+                    @include width (72%);
+                    text-align: center;
+                    @include mgl (55px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (55px);
+                    font-size: 15px;
+                }
+                @media screen and(max-width: 360px) {
+                    @include mgl (50px);
+                    font-size: 15px;
+                }
+                @media screen and(max-width: 320px) {
+                    @include mgl (50px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (15px);
+                    @include width (100%);
+                }
+                @include ColorVsFontWeight ($XColor !important, 650);
+                @include mgt (30px);
+            }
+            & .item-h4-32 p {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    @include width (91%);
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (95%);
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 16px;
+                    @include width (51%);
+                    text-align: center;
+                    @include mgl (120px);
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                    text-align: center;
+                    margin-left: 90px;
+                    width: 55%;
+                }
+                @media screen and (max-width: 412px) {
+                    font-size: 14px;
+                    width: 63%;
+                    text-align: center;
+                    margin-left: 70px;
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (70px);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 360px) {     
+                    @include mgl (60px); 
+                    font-size: 13px;
+                    @include width (68%);
+                }
+                @media screen and (max-width: 320px) {     
+                    @include mgl (45px); 
+                    @include width (75%);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 280px) {     
+                    @include mgl (45px); 
+                    font-size: 12px;
+                }
+                @include mgt (10px);
+            }
+            & .item-h4-33 h4 {
+                @media screen and (max-width: 1024px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                    @include width (110%);
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 20px;
+                    @include width (72%);
+                    text-align: center;
+                    @include mgl (70px);
+                }
+                 @media screen and (max-width: 415px) {
+                    font-size: 18px;
+                    @include width (79%);
+                    text-align: center;
+                    @include mgl (53px);
+                }
+                @media screen and (max-width: 412px) {
+                    font-size: 18px;
+                    @include width (79%);
+                    text-align: center;
+                    @include mgl (44px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (10px);
+                    font-size: 15px;
+                    @include width (100%);
+                }
+                @media screen and(max-width: 360px) {
+                    @include mgl (15px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 320px) {     
+                    @include mgl (5px); 
+                    font-size: 15px;
+                    @include width (104%);
+                }
+                @media screen and (max-width: 280px) {     
+                    @include mgl (15px); 
+                }
+                @include ColorVsFontWeight ($GreenColor !important, 650);
+                @include mgt (30px);
+            }
+            & .item-h4-33 p {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    @include width (91%);
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (95%);
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 16px;
+                    @include width (51%);
+                    text-align: center;
+                    @include mgl (120px);
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                    text-align: center;
+                    margin-left: 90px;
+                    width: 55%;
+                }
+                @media screen and (max-width: 412px) {
+                    font-size: 14px;
+                    width: 63%;
+                    text-align: center;
+                    margin-left: 70px;
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (70px);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 360px) {     
+                    @include mgl (60px); 
+                    font-size: 13px;
+                    @include width (68%);
+                }
+                @media screen and (max-width: 320px) {     
+                    @include mgl (45px); 
+                    @include width (75%);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 280px) {     
+                    @include mgl (45px); 
+                    font-size: 12px;
+                }
+                @include mgt (10px);
+            }
+        }
+        & .designed {
+            @include mgt (100px);
+            & img {
+                @media screen and (max-width: 1024px) {
+                    @include width (100%);
+                    @include mgt (166px);
+                    @include mgl (10px);
+                }
+                @media screen and (max-width: 540px) {
+                    @include mgt (40px);
+                    @include mgl (20px);
+                    @include width (85%);
+                }
+                @media screen and (max-width: 415px) {
+                    @include mgt (7px);
+                    @include mgl (35px);
+                }
+                @media screen and (max-width: 412px) {
+                    @include mgl (35px);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (35px);
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (30px);
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (32px);
+                }
+                @include width (100%);
+                @include mgl (-19px); 
+            }
+            & h1 {
+                @media screen and (max-width: 1024px) {
+                    font: {
+                        size: 42px;
+                        weight: 650;
+                    }
+                    @include width (158%);
+                }
+                @media screen and (max-width: 768px) {
+                    font: {
+                        size: 36px;
+                        weight: 650;
+                    }
+                    @include width (162%);
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 40px;
+                    @include width (76%);
+                    text-align: center;
+                    @include mgl (65px);
+                    @include mgt (50px);
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 35px;
+                    @include width (100%);
+                    @include mgt (50px);
+                    text-align: center;
+                    @include mgl (10px);
+                }
+                @media screen and (max-width: 412px) {
+                    font-size: 35px;
+                    @include width (100%);
+                    @include mgt (50px);
+                    text-align: center;
+                    @include mgl (10px);
+                }
+                @media screen and (max-width: 376px) {
+                    font-size: 30px;
+                    @include width (100%);
+                    @include mgt (50px);
+                    text-align: center;
+                    @include mgl (10px);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (12px);
+                    font-size: 30px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (12px);
+                    font-size: 27px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (16px);
+                    font-size: 25px;
+                }
+                font: {
+                    size: 36px;
+                    weight: 650;
+                }
+                color: $Color;
+                @include width (96%);
+                line-height: $lh;
+            }
+            & p {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    @include width (128%);
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (144%);
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 16px;
+                    @include width (76%);
+                    @include mgl (70px);
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                    @include width (101%);
+                    text-align: center;
+                    @include mgl (7px);
+                }
+                @media screen and (max-width: 376px) {
+                    font-size: 13px;
+                    @include width (101%);
+                    text-align: center;
+                    @include mgl (7px);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (20px);
+                    @include width (95%);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (0px);
+                    font-size: 13px;
+                    @include width (106%);
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (15px);
+                    @include width (95%);
+                    font-size: 12px;
+                }
+                @include ColorVsFontWeight ($GrayColor,6000);
+                @include width (105%);
+                @include mgt (20px);
+                @include padding (3px);
+            }
+            & .btn-outline-success {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    @include width (45%);
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (60%);
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 16px;
+                    @include width (31%);
+                    @include mgl (180px);
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                    @include width (35%);
+                    @include mgl (125px);
+                }
+                @media screen and (max-width: 412px) {
+                    @include mgl (120px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (120px);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (115px);
+                    font-size: 13px;
+                    @include width (34%);
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (92px);
+                    @include width (40%);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include width (60%);
+                    @include mgl (60px);
+                }
+                @include width (36%);
+                @include padding (15px);
+                @include mgt (10px);
+                border-radius: $bdr;
+                background-color: $br !important;
+                @include ColorVsFontWeight ($WhiteColor !important, 600);
+            }
+        }
+    }
+
+    .Why {
+        @include mgt (150px);
+        & h1 {
+            @media screen and (max-width: 1024px) {
+                font: {
+                    size: 48px;
+                    weight: 650;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                font: {
+                    size: 44px;
+                    weight: 650;
+                }
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 40px;
+                @include width (88%);
+                @include mgl (35px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 35px;
+                @include mgl (21px);
+            }
+            @media screen and (max-width: 412px) {
+                font-size: 35px;
+                @include mgl (25px);
+            }
+            @media screen and (max-width: 376px) {
+                font-size: 30px;
+                @include mgl (20px);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (0px);
+                @include width (100%);
+                font-size: 30px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (-2px);
+                font-size: 27px;
+                @include width (100%);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (3px);
+                font-size: 25px;
+            }
+            font: {
+                size: 36px;
+                weight: 700;
+            }
+            color: $Color;
+            line-height: $lh;
+        }
+        & p {
+            @media screen and (max-width: 1024px) {
+                font-size: 16px;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 16px;
+                @include width (58%);
+                @include mgl (110px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 14px;
+                @include width (100%);
+                @include mgl (0px);
+            }
+            @media screen and (max-width: 412px) {
+                font-size: 14px;
+                @include mgl (0px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (5px);
+                font-size: 13px;
+                @include width (96%);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (0px);
+                @include width (100%);
+                font-size: 13px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (12px);
+                @include width (90%);
+                font-size: 13px;
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (12px);
+                font-size: 12px;
+            }
+            font: {
+                size: 16px;
+                weight: 500;
+            }
+            color: $GrayColor;
+            @include mgt (30px);
+        }
+        &  .line1 {
+            @include mgt(50px);
+            & img {
+                @media screen and (max-width: 540px) {
+                    @include mgl (-20px);
+                }
+                @media screen and (max-width: 415px) {
+                    @include mgl (-9px);
+                }
+                @media screen and (max-width: 412px) {
+                    @include mgl (-9px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (-9px);
+                    @include width (20%);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (8px);
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (-5px);
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (0px);
+                }
+            }
+            & h4 {
+                @media screen and (max-width: 1024px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 540px) {
+                    @include mgl (-18px);
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 415px) {
+                    @include mgl (-12px);
+                    font-size: 18px;
+                }
+                @media screen and (max-width: 412px) {
+                    @include mgl (-12px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (-5px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (6px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (4px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (10px);
+                    font-size: 15px;
+                }
+                font: {
+                    size: 20px;
+                    weight: 700;
+                }
+                color: $Color;
+                @include mgt (30px);
+            }
+            & p {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    @include width (88%);
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (98%);
+                }
+                @media screen and (max-width: 540px) {
+                    @include width (50%);
+                    @include mgl (120px);
+                    font-size: 16px;
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                    text-align: center;
+                    margin-left: 90px;
+                    width: 55%;
+                }
+                @media screen and (max-width: 412px) {
+                    @include width (63%);
+                    @include mgl (65px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include width (60%);
+                    @include mgl (75px);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 360px) {
+                    @include width (60%);
+                    @include mgl (70px);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include width (70%);
+                    @include mgl (45px);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (40px);
+                    font-size: 12px;
+                    @include width (80%);
+                }
+                font: {
+                    size: 16px;
+                    weight: 400;
+                }
+                color: $GrayColor;
+                margin: 0 auto 80px auto;
+                @include width (63%);
+                @include mgt (10px);
+            }
+        }
+        &  .line2 {
+            @include mgt(30px);
+            & img {
+                @media screen and (max-width: 540px) {
+                    @include mgl (-17px);
+                }
+                @media screen and (max-width: 415px) {
+                    @include mgl (6px);
+                }
+                @media screen and (max-width: 412px) {
+                    @include mgl (6px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (6px);
+                    @include width (20%);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (10px);
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (-2px);
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (0px);
+                }
+            }
+            & h4 {
+                @media screen and (max-width: 1024px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 540px) {
+                    @include mgl (-14px);
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 415px) {
+                    @include mgl (1px);
+                    font-size: 18px;
+                }
+                @media screen and (max-width: 412px) {
+                    @include mgl (1px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (1px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (12px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (2px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (6px);
+                    font-size: 15px;
+                }
+                font: {
+                    size: 20px;
+                    weight: 700;
+                }
+                color: $Color;
+                @include mgt (30px);
+            }
+            & p {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    @include width (88%);
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (98%);
+                }
+                @media screen and (max-width: 540px) {
+                    @include width (50%);
+                    @include mgl (120px);
+                    font-size: 16px;
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                    text-align: center;
+                    margin-left: 90px;
+                    width: 55%;
+                }
+                @media screen and (max-width: 412px) {
+                    @include width (63%);
+                    @include mgl (65px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include width (60%);
+                    @include mgl (75px);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 360px) {
+                    @include width (60%);
+                    @include mgl (75px);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include width (70%);
+                    @include mgl (45px);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (35px);
+                    @include width (80%);
+                }
+                font: {
+                    size: 16px;
+                    weight: 400;
+                }
+                color: $GrayColor;
+                margin: 0 auto 80px auto;
+                @include width (63%);
+                @include mgt (10px);
+            }
+        }
+    }
+
+    .Ultimate {
+        @include mgt (100px);
+        padding: 0 0 20px 0;
+        overflow: hidden;
+        & .pe-0 h1 {
+            @media screen and (max-width: 1024px) {
+                font: {
+                    size: 42px;
+                    weight: 650;
+                }
+                @include width (79%);
+            }
+            @media screen and (max-width: 768px) {
+                font: {
+                    size: 44px;
+                    weight: 650;
+                }
+                @include width (100%);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 40px;
+                @include width (70%);
+                @include mgl (55px);
+                text-align: center;
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 35px;
+                @include mgl (45px);
+                @include width (75%);
+            }
+            @media screen and (max-width: 376px) {
+                font-size: 30px;
+                @include mgl (40px);
+                @include width (75%);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (-4px);
+                @include width (99%);
+                font-size: 30px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (-7px);
+                font-size: 27px;
+                @include width (99%);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (0px);
+                font-size: 25px;
+                @include width (99%);
+            }
+            font: {
+                size: 36px;
+                weight: 700;
+            }
+            color: $Color;
+            @include width (48%);
+            line-height: $lh;
+        }
+        & .pe-0 p {
+            @media screen and (max-width: 1024px) {
+                font-size: 17px;
+                @include width (77%);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                @include width (100%);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 16px;
+                width: 58%;
+                margin-left: 90px;
+                text-align: center;
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 14px;
+                width: 92%;
+                margin-left: 10px;
+            }
+            @media screen and (max-width: 376px) {
+                font-size: 13px;
+                width: 92%;
+                margin-left: 7px;
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (5px);
+                font-size: 13px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (2px);
+                font-size: 13px;
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (8px);
+                font-size: 12px;
+            }
+            @include ColorVsFontWeight ($GrayColor , 600);
+            @include width (55%);
+            @include mgt (10px);
+        }
+        & .line1 {
+            @include mgt (70px);
+            & img {
+                @media screen and (max-width: 540px) {
+                    @include mgl (200px);
+                }
+                @media screen and (max-width: 415px) {
+                    @include mgl (160px);
+                }
+                @media screen and (max-width: 412px) {
+                    @include mgl (155px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (135px);
+                    @include width (20%);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (128px);
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (103px);
+                }
+            }
+            & .common h4 {
+                @media screen and (max-width: 1024px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 540px) {
+                    @include mgl (175px);
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 415px) {
+                    text-align: center;
+                    font-size: 18px;
+                    @include mgl (10px);
+                }
+                @media screen and (max-width: 376px) {
+                    text-align: center;
+                    font-size: 15px;
+                    @include mgl (-10px);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (-20px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (-4px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (0px);
+                    font-size: 15px;
+                }
+                font: {
+                    size: 20px;
+                    weight: 700;
+                }
+                color: $Color;
+                @include mgt (30px);
+            }
+            & .common p {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    @include width (100%);
+                }
+                font: {
+                    size: 16px;
+                    weight: 400;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (100%);
+                }
+                @media screen and (max-width: 540px) {
+                    @include width (49%);
+                    @include mgl (120px);
+                    font-size: 16px;
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                    text-align: center;
+                    margin-left: 90px;
+                    width: 55%;
+                }
+                @media screen and (max-width: 376px) {
+                    font-size: 13px;
+                    text-align: center;
+                    @include mgl (82px);
+                    @include width (55%);
+                }
+                @media screen and (max-width: 360px) {
+                    margin-left: 60px;
+                    width: 60%;
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (50px);
+                    @include width (65%);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (38px);
+                    @include width (75%);
+                }
+                color: $GrayColor;
+                @include mgt (10px);
+                @include width (70%);
+            }
+        }
+        & .line2 {
+            @include mgt (70px);
+            & img {
+                @media screen and (max-width: 540px) {
+                    @include mgl (195px);
+                }
+                @media screen and (max-width: 415px) {
+                    @include mgl (160px);
+                }
+                @media screen and (max-width: 412px) {
+                    @include mgl (157px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (140px);
+                    @include width (20%);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (132px);
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (115px);
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (103px);
+                }
+            }
+            & .common h4 {
+                @media screen and (max-width: 1024px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 540px) {
+                    @include mgl (165px);
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 415px) {
+                    text-align: center;
+                    font-size: 18px;
+                    @include mgl (8px);
+                }
+                @media screen and (max-width: 376px) {
+                    text-align: center;
+                    font-size: 15px;
+                    @include mgl (-10px);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (-20px);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (0px);
+                    @include width (96%);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (6px);
+                    font-size: 15px;
+                    @include width (96%);
+                }
+                font: {
+                    size: 20px;
+                    weight: 700;
+                }
+                color: $Color;
+                @include mgt (30px);
+            }
+            & .common p {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    @include width (100%);
+                }
+                font: {
+                    size: 16px;
+                    weight: 400;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (100%);
+                }
+                @media screen and (max-width: 540px) {
+                    @include width (49%);
+                    @include mgl (120px);
+                    font-size: 16px;
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                    text-align: center;
+                    margin-left: 90px;
+                    width: 55%;
+                }
+                @media screen and (max-width: 376px) {
+                    font-size: 13px;
+                    text-align: center;
+                    @include mgl (82px);
+                    @include width (55%);
+                }
+                @media screen and (max-width: 360px) {
+                    margin-left: 60px;
+                    width: 60%;
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (50px);
+                    @include width (65%);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (38px);
+                    @include width (75%);
+                }
+                color: $GrayColor;
+                @include mgt (10px);
+                @include width (70%);
+            }
+        }
+        & .btn-outline-success {
+            @media screen and (max-width: 1024px) {
+                font-size: 16px;
+                @include width (20%);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                @include width (30%);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 16px;
+                @include width (24%);
+                @include mgl (190px);
+            }
+            @media screen and (max-width: 415px) {
+                @include mgl (150px);
+                font-size: 14px;
+            }
+            @media screen and (max-width: 412px) {
+                @include mgl (150px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (140px);
+                font-size: 13px;
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (120px);
+                font-size: 16px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (100px);
+                @include width (32%);
+                font-size: 13px;
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (90px);
+                @include width (32%);
+                font-size: 13px;
+            }
+            @include padding (15px);
+            @include width (17%);
+            @include ColorVsFontWeight ($WhiteColor !important, 600);
+            @include mgt (30px);
+            background-color: $br !important;
+            border-radius: $bdr;
+        }
+        & .col-md-5 img {
+            @media screen and (max-width: 1024px) {
+                @include width (103%);
+                height: 470px;
+                @include mgt (266px);
+                @include mgl (29px);
+            }
+            @media screen and (max-width: 768px) {
+                @include width (100%);
+                height: 370px;
+                @include mgt (322px);
+                @include mgl (27px);
+            }
+            @media screen and (max-width: 540px) {
+                @include mgt (150px);
+                @include mgl (-30px);
+                @include width (90%);
+                padding-left: 100px;
+            }
+            @media screen and (max-width: 415px) {
+                @include mgt (150px);
+                @include mgl (-50px);
+                @include width(100%);
+                height: 350px;
+            }
+            @media screen and (max-width: 412px) {
+                @include mgt (150px);
+                @include mgl (-45px);
+                height: 340px;
+                @include width (100%);
+            }
+            @media screen and (max-width: 376px) {
+                @include width (100%);
+                @include mgl (-45px);
+                height: 295px;
+            }
+            @media screen and (max-width: 360px) {
+                margin-left: -75px;
+                height: 322px;
+                width: 117%;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (-50px);
+                @include width (100%);
+                height: 250px;
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (-50px);
+                @include width (105%);
+            }
+            @include width (105%);
+            @include mgt (110px);
+            @include mgl (82px);
+            transform: translateX(-10px);
+        }
+    }
+
+    .Pricing {
+        @include mgt (120px);
+        & h1 {
+            @media screen and (max-width: 1024px) {
+                font: {
+                    size: 40px;
+                    weight : 650;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 40px;
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 40px;
+                @include mgl (-7px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 35px;
+                @include mgl (2px);
+            }
+            @media screen and (max-width: 376px) {
+                font-size: 30px;
+                @include mgl (2px);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (-13px);
+                @include width (108%);
+                font-size: 30px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (-10px);
+                font-size: 27px;
+                @include width (108%);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (-6px);
+                font-size: 25px;
+                @include width (108%);
+            }
+            font: {
+                size: 36px;
+                weight: 700;
+            }
+            color: $Color;
+            text-align: center;
+            line-height: $lh;
+        }
+        & p {
+            @media screen and (max-width: 1024px) {
+                font-size: 16px;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+            }
+            @media screen and (max-width: 540px) {
+                @include width (78%);
+                @include mgl (45px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 14px;
+                @include width (95%);
+                @include mgl (8px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (10px);
+                font-size: 13px;
+                @include width (93%);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (15px);
+                @include width (90%);
+                font-size: 13px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (15px);
+                font-size: 13px;
+                @include width (89%);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (15px);
+                font-size: 12px;
+                @include width (89%);
+            }
+            @include mgt (20px);
+            font: {
+                size: 16px;
+                weight: 400;
+            }
+            text-align: center;
+            color: $GrayColor;
+        }
+        & .trigger {
+            @media screen and (max-width: 1024px) {
+                @include mgl (165px);
+                font-size: 16px;
+            }
+            @media screen and (max-width: 768px) {
+                @include width (75%);
+                @include mgl (57px);
+                font-size: 16px;
+            }
+            @media screen and (max-width: 540px) {
+                @include width (67%);
+                @include mgl (80px);
+            }
+            @media screen and (max-width: 415px) {
+                @include width (75%);
+                @include mgl (45px);
+            }
+            @media screen and (max-width: 412px) {
+                @include width (75%);
+                @include mgl (40px);
+            }
+            @media screen and (max-width: 376px) {
+                @include width (40%);
+                @include mgl (100px);
+            }
+            @media screen and (max-width: 360px) {
+                @include width (43%);
+                @include mgl (95px);
+                font-size: 13px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (75px);
+                @include width (49%);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (55px);
+                @include width (56%);
+            }
+            @include mgt (50px);
+            @include padding (4px);
+            border: 2px solid #ebebeb;
+            @include display (inline-block);
+            border-radius: $bdr;
+            @include mgl (270px);
+            & .active {
+                @media screen and (max-width: 1024px) {
+                    font-size: 21px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                }
+                @media screen and (max-width: 376px) {
+                    font-size: 13px;
+                }
+                background: $br;
+                color: $WhiteColor;
+                @include padding (15px 42px);
+                border-radius: $bdr;
+                border: none;
+                &:hover {
+                    @include table;
+                }
+                &:focus {
+                    @include center;
+                }
+            }
+            & .inactive {
+                @media screen and (max-width: 1024px) {
+                    font-size: 21px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                }
+                @media screen and (max-width: 376px) {
+                    font-size: 13px;
+                }
+                background: $WhiteColor;
+                color: $Color;
+                @include padding (15px 42px);
+                border-radius: $bdr;
+                border: none;
+                &:hover {
+                    @include table;
+                }
+                &:focus {
+                    @include center;
+                    background-color: $br;
+                    @include padding (15px 42px);
+                    border-radius: $br;
+
+                }
+            }
+        }  
+        & .col-md-4  {
+            @media screen and (max-width: 1024px) {
+               @include width (40%);
+               @include mgl (-30px);
+            }
+            @media screen and (max-width: 768px) {
+                @include width (45%);
+                @include mgl (-53px);
+            }
+            @media screen and (max-width: 540px) {
+                @include width (80%);
+                @include mgl (50px);
+            }
+            @media screen and (max-width: 415px) {
+                @include width (84%);
+                @include mgl (32px);
+            }
+            @media screen and (max-width: 412px) {
+                @include mgl (45px);
+                @include width (78%);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (40px);
+                @include width (80%);
+            }
+            @media screen and (max-width: 360px) {
+                @include width (85%);
+                @include mgl (20px);
+            }
+            @media screen and (max-width: 320px) {
+                @include width (94%);
+                @include mgl (8px);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (8px);
+                @include width (95%);
+            }
+        }
+        & .card {
+            margin: 32px;
+            &-header {
+                @include padding (30px);
+                @include background (#f6f8fa);
+                border: none;
+                & h1 {
+                    @media screen and (max-width: 1024px) {
+                        font-size: 48px;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 45px;
+                    }
+                    @media screen and (max-width: 415px) {
+                        font-size: 40px;
+                    }
+                    @media screen and (max-width: 376px) {
+                        font-size: 30px;
+                    }
+                    @media screen and (max-width: 360px) {
+                        font-size: 30px;
+                    }
+                    @media screen and (max-width: 280px) {
+                        font-size: 30px;
+                    }
+                    font: {
+                        size: 60px;
+                        weight:700;
+                    }
+                    margin: 40px 0 32px 0;
+                    & span {
+                        color: $BlueColor;
+                        font : {
+                            size: 20px;
+                            weight: 400;
+                        }
+                    }
+                }
+                & h4 {
+                    @media screen and (max-width: 1024px) {
+                        @include width (108%);
+                        @include mgl (-5px);
+                        font-size: 20px;
+                    }
+                    @media screen and (max-width: 768px) {
+                        @include width (108%);
+                        @include mgl (-5px);
+                        font-size: 20px;
+                    }
+                    @media screen and (max-width: 376px) {
+                        @include width (108%);
+                        @include mgl (-5px);
+                        font-size: 15px;
+                    }
+                    @media screen and (max-width: 360px) {
+                        @include width (108%);
+                        @include mgl (-5px);
+                        font-size: 15px;
+                    }
+                    @media screen and (max-width: 280px) {
+                        @include width (108%);
+                        font-size: 20px;
+                        @include mgl (-5px);
+                    }
+                    @include ColorVsFontWeight ($Color, 700);
+                    text-align: center;
+                }
+                & p {
+                    @media  screen and (max-width: 540px) {
+                        @include mgl (43px);
+                    }
+                    @media  screen and (max-width: 415px) {
+                        @include mgl (43px);
+                        font-size: 14px;
+                    }
+                    @media  screen and (max-width: 412px) {
+                        @include mgl (10px);
+                        font-size: 14px;
+                    }
+                    @media  screen and (max-width: 376px) {
+                        @include mgl (5px);
+                        font-size: 13px;
+                    }
+                    @media screen and (max-width: 360px) {
+                        @include mgl (18px);
+                        font-size: 13px;
+                    }
+                    @media screen and (max-width: 320px) {
+                        @include width (102%);
+                        @include mgl (0px);
+                    }
+                    @media screen and (max-width: 280px) {
+                        @include width (102%);
+                        font-size: 12px;
+                        @include mgl (0px);
+                    }
+                    @include colorVsfont ($BlueColor, 16px);
+                }
+            }
+            &-body {
+                text-align: center;
+                & ul {
+                    @media screen and (max-width: 360px) {
+                        font-size: 16px;
+                    }
+                    padding: 0;
+                    margin: 0;
+                    @include mgb (40px);
+                    & li {
+                        @media screen and (max-width: 768px) {
+                            font-size: 16px;
+                        }
+                        @media screen and (max-width: 415px) {
+                            font-size: 14px;
+                        }
+                        @media screen and (max-width: 376px) {
+                            font-size: 13px;
+                        }
+                        @media screen and (max-width: 360px) {
+                            font-size: 13px;
+                        }
+                        @media screen and (max-width: 280px) {
+                            font-size: 12px;
+                        }
+                        list-style: none;
+                        margin: 12px 0;
+                        font-family: 'Poppins', sans-serif;
+                        color: $BlueColor;
+                    }
+                }
+                & .btn-outline-success {
+                    @media screen and (max-width: 415px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width: 376px) {
+                        font-size: 13px;
+                    }
+                    @media screen and (max-width: 360px) {
+                        font-size: 13px;
+                    }
+                    @include padding (14px);
+                    border-radius: $bdr;
+                    background: $br !important;
+                    color: $WhiteColor !important;
+                }
+                & a {
+                    @media screen and (max-width: 768px) {
+                        font-size: 16px;
+                    }
+                    @media screen and (max-width: 415px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width: 376px) {
+                        font-size: 13px;
+                    }
+                    @media screen and (max-width: 360px) {
+                        font-size: 13px;
+                    }
+                    @media screen and (max-width: 280px) {
+                        font-size: 12px;
+                    }
+                    margin: 25px 25px 15px 25px;
+                    @include display (inline-block);
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+        }   
+        & .table-active {
+            border-radius: 8px;
+            border: none;
+            box-shadow: 10px 12px 12px 0px rgba(0, 0, 0, 0.10);
+            &:hover {
+                @include table ;
+            }
+
+        }
+        & .table-inactive {
+            border: ridge solid #999ca5;
+            border-radius: 8px;
+            &:hover {
+                @include table;
+            }
+        }
+    }
+
+    .Testimonial {
+        @include mgt(200px);
+        &  img {
+            @media screen and (max-width: 1024px) {
+                @include mgl (-40px);
+                @include width (115%);
+            }
+            @media screen and (max-width: 768px) {
+                @include mgl (-32px);
+                @include width (115%);
+            }
+            @media screen and (max-width: 540px) {
+                @include mgl (-8px);
+                @include width (100%);
+            }
+            @media screen and (max-width: 415px) {
+                @include width (96%);
+                @include mgl (16px);
+                @include mgt (-66px);
+            }
+            @media screen and (max-width: 360px) {
+                @include width (100%);
+                @include mgl (16px);
+                @include mgt (-66px);
+            }
+           @include width (110%);
+           @include mgl (-99px);
+        }
+        & h1 {
+            @media screen and (max-width: 1024px) {
+                font: {
+                    size: 38px;
+                    weight: 650;
+                }
+                @include width (99%);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 42px;
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 40px;
+                text-align: center;
+                @include width (76%);
+                @include mgl (58px);
+                @include mgt (50px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 35px;
+                text-align: center;
+                @include mgl (50px);
+                @include mgt (50px);
+            }
+            @media screen and (max-width: 376px) {
+                @include width (100%);
+                font-size: 30px;
+                @include mgl (0px);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (15px);
+                @include width (93%);
+                font-size: 30px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (11px);
+                font-size: 25px;
+                @include width (93%);
+            }
+           font: {
+                size: 36px;
+                weight: 700;
+            }
+            color: $Color;
+            @include width (70%);
+            line-height: $lh;
+        }
+        & p {
+            @media screen and (max-width: 1024px) {
+                font: {
+                    size: 16px;
+                    weight: 400;
+                }
+                @include width (100%);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                @include width (85%);
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 16px;
+                @include width (68%);
+                text-align: center;
+                @include mgl (75px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 14px;
+                text-align: center;
+                @include mgl (72px);
+                @include width (64%);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (35px);
+                font-size: 13px;
+                @include width (80%);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (20px);
+                @include width (88%);
+                font-size: 13px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (20px);
+                font-size: 13px;
+                @include width (85%);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (28px);
+                font-size: 12px;
+                @include width (80%);
+            }
+           @include ColorVsFontWeight ($GrayColor, 600);
+           @include mgt (20px);
+           @include width (75%);
+        }
+        & .item {
+            @media screen and (max-width: 540px) {
+                @include mgl (70px);
+                @include width (70%);
+            }
+            @media screen and (max-width: 415px) {
+                @include mgl (60px);
+                @include width (70%);
+            }
+            @media screen and (max-width: 412px) {
+                @include mgl (60px);
+                @include width (70%);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (17px);
+                @include width (90%);
+            }
+            @include mgt (20px);
+            & i {
+                color: #ffcc00;
+                @include mgb (25px);
+            }
+            & h5 {
+                @media screen and (max-width: 1024px) {
+                    font: {
+                        size: 20px;
+                        weight: 650;
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 20px;
+                    @include mgl (15px);
+                    text-align: center;
+                }
+                @media screen and (max-width: 415px) {
+                    @include mgl (5px);
+                    font-size: 16px;
+                    @include width (100%);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (13px);
+                    font-size: 15px;
+                    @include width (94%);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (3px);
+                    @include width (98%);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (-22px);
+                    @include width (111%);
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (-18px);
+                    font-size: 15px;
+                    @include width (111%);
+                }
+                color: $Color;
+               @include mgb (20px);
+            }
+            & p {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    @include width (100%);
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (100%);
+                }
+                @media screen and (max-width: 540px) {
+                    font-size: 16px;
+                    @include width (94%);
+                    text-align: center;
+                    @include mgl (15px);
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 14px;
+                }
+                @media screen and (max-width: 376px) {
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 412px) {
+                    @include width (96%);
+                    @include mgl (4px);
+                }
+                @media screen and (max-width: 376px) {
+                    @include mgl (19px);
+                    @include width (92%);
+                }
+                @media screen and (max-width: 360px) {
+                    @include mgl (13px);
+                    @include width (92%);
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 320px) {
+                    @include mgl (13px);
+                    @include width (92%);
+                }
+                @media screen and (max-width: 280px) {
+                    @include mgl (13px);
+                    font-size: 12px;
+                    @include width (92%);
+                }
+            }
+            & h6 {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    @include width (158%);
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 376px) {
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 360px) {
+                    font-size: 20px;
+                    @include width (158%);
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 280px) {
+                    font-size: 13px;
+                    @include width (158%);
+                    font-size: 15px;
+                }
+                color: $Color;
+                @include mgb (-14px);
+            }
+            & .d-flex  p {
+                @media screen and (max-width: 1024px) {
+                    font-size: 12px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                    @include width (160%);
+                }
+                @media screen and (max-width: 415px) {
+                    font-size: 12px;
+                }
+                @media screen and (max-width: 376px) {
+                    font-size: 11px;
+                }
+                @media screen and (max-width: 360px) {
+                    @include width (160%);
+                    font-size: 11px;
+                }
+            }
+            & .d-flex img {
+                margin: inherit;
+                max-width: 15%;
+                height: auto;
+            }          
+        }
+    }
+
+    .FAQ {
+        @include mgt (150px);
+        @include padding (80px 0);
+        & h2 {
+            @media screen and (max-width: 1024px) {
+                font: {
+                    size: 48px;
+                    weight: 600;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                font: {
+                    size: 48px;
+                    weight: 650;
+                }
+            }
+            @media screen and (max-width: 540px) {
+                @include mgl (5px);
+                font-size: 40px;
+                @include width (99%);
+            }
+            
+            @media screen and (max-width: 415px) {
+                font-size: 35px;
+                @include mgl (5px);
+            }
+            @media screen and (max-width: 412px) {
+                @include mgl (5px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (5px);
+                font-size: 30px;
+            }
+            @media screen and (max-width: 360px) {
+                @include width (101%);
+                @include mgl (-1px);
+                font-size: 30px;
+            }
+            @media screen and (max-width: 320px) {
+                @include width (100%);
+                font-size: 25px;
+                @include mgl (5px);
+            }
+            @media screen and (max-width: 280px) {
+                @include width (101%);
+                @include mgl (5px);
+            }
+            font: {
+                size: 36px;
+                weight: 700;
+            }
+            color: $Color;
+            text-align: center;
+        }
+        & p {
+            @media screen and (max-width: 1024px) {
+                font: {
+                    size: 16px;
+                    weight: 400;
+                }
+                @include width (99%);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                @include width (119%);
+                @include mgl (-43px);
+            }
+            @media screen and (max-width: 540px) {
+                @include mgl (45px);
+                @include width (82%);
+            }
+            @media  screen and (max-width: 415px) {
+                font-size: 14px;
+                @include width (90%);
+                @include mgl (20px);
+            }
+            @media screen and (max-width: 412px) {
+                @include width (90%);
+                //padding-left: 5px;
+            }
+            @media  screen and (max-width: 376px) {
+                @include width (101%);
+                font-size: 13px;
+                @include mgl (-3px);
+            }
+            @media  screen and (max-width: 360px) {
+                @include width (93%);
+                @include mgl (10px);
+                font-size: 13px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (25px);
+                font-size: 13px;
+                @include width (82%);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (25px);
+                font-size: 12px;
+                @include width (82%);
+            }
+            @include ColorVsFontWeight ($GrayColor, 600);
+            text-align: center;
+            @include mgt (30px);
+        }
+        & .accordion {
+            @media screen and (max-width: 540px) {
+                @include width (70%);
+                @include mgl (55px);
+                @include padding (9px);  
+            }
+            @media screen and (max-width: 376px) {
+                @include width (90%);
+                @include padding (9px); 
+                @include mgl (18px); 
+             }
+            @media screen and (max-width: 415px) {
+                @include width (90%);
+                @include padding (9px); 
+                @include mgl (16px); 
+             }
+            @media screen and (max-width: 360px) {
+                @include width (90%);
+                @include padding (9px); 
+                @include mgl (18px); 
+             }
+            @media screen and (max-width: 320px) {
+               @include width (95%);
+               @include padding (9px);  
+               @include mgl (6px);
+            }
+            @media screen and (max-width: 280px) {
+                @include width (95%);
+                @include mgl (10px);
+                @include padding (9px);  
+             }
+            @include mgt (60px);
+            &-item {
+                @include padding (8px 0 !important);
+                @include mgb (10px);
+                background-color: #f5f5f5;
+                & h2 {
+                    @media screen and (max-width: 1024px) {
+                        font: {
+                            size: 20px;
+                            weight: 400;
+                        }
+                    }
+                    @media screen and (max-width: 768px) {
+                        font: {
+                            size: 20px;
+                            weight: 400;
+                        }
+                    }
+                    @media screen and (max-width: 360px) {
+                        @include width (100%);
+                        font-size: 20px;
+                    }
+                   font: {
+                       size: 20px;
+                       weight: 700;
+                   }
+                   color: $Color;
+                }
+                & p {
+                    @media screen and (max-width: 1024px) {
+                        font-size: 16px;
+                        @include width (100%);
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 16px;
+                        @include width (96%);
+                        @include mgl (10px);
+                    }
+                    @media  screen and (max-width: 415px) {
+                        @include width (100%);
+                        font-size: 14px;
+                    }
+                    @media  screen and (max-width: 412px) {
+                        @include width (100%);
+                    }
+
+                    @media  screen and (max-width: 376px) {
+                        @include width (100%);
+                        font-size: 13px;
+                    }
+                    @media  screen and (max-width: 360px) {
+                        @include width (105%);
+                        font-size: 13px;
+                    }
+                    @media  screen and (max-width: 320px) {
+                        @include width (100%);
+                        font-size: 13px;
+                    }
+                    @media  screen and (max-width: 280px) {
+                        @include width (100%);
+                        font-size: 12px;
+                    }
+                   font: {
+                       size: 16px;
+                       weight: 400;
+                   }
+                    color: $BlueColor;
+                    text-align: left;
+                    width: 89%;
+                }
+            }
+            &-button {
+                @media screen and (max-width: 415px) {
+                    font: {
+                        size: 16px;
+                        weight: 500;
+                    }
+                }
+                @media screen and (max-width: 376px) {
+                   font-size: 15px;
+                }
+                @media screen and (max-width: 360px) {
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 320px) {
+                    font-size: 14px;
+                }
+                @media screen and (max-width: 280px) {
+                    font-size: 14px;
+                }
+                font: {
+                    size: 20px;
+                    weight: 600;
+                }
+                color: var(--prussian-blue);
+                border: none;
+                background-color: #f5f5f5;
+                &::after {
+                    background-image: $bgi;
+                    content: '+';
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+                &:not(.collapsed) {
+                    box-shadow: none;
+                    &::after {
+                        background-image: $bgi;
+                        content: '-';
+                    }
+                }
+            }
+        }
+    }
+
+    .Download {
+        @media  screen and (max-width: 1024px) {
+            @include mgb (160px);
+        }
+        @media  screen and (max-width: 415px) {
+            @include mgb (160px);
+        }
+        @include padding (40px 0);
+        border-top: 2px solid #f4f4f4;
+        & h1 {
+            @media screen and (max-width: 1024px) {
+                font: {
+                    size: 48px;
+                    weight:600;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                font: {
+                    size: 45px;
+                    weight:650;
+                }
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 45px;
+                text-align: center;
+                @include width (77%);
+                @include mgl (60px);
+            }
+            @media screen and (max-width: 415px) {
+                font: {
+                    size: 35px;
+                    weight: 700;
+                }
+                @include mgl (45px);
+            }
+            @media screen and (max-width: 412px) {
+                @include mgl (46px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (40px);
+                font-size: 30px;
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (39px);
+                font-size: 30px;
+            }
+            @media screen and (max-width: 320px) {
+                @include width (100%);
+                font-size: 27px;
+                @include mgl (-5px);
+            }
+            @media screen and (max-width: 280px) {
+                @include width (100%);
+                font-size: 25px;
+                @include mgl (-5px);
+            }
+            font: {
+                size: 48px;
+                weight: 600;
+            }
+            color: $Color;
+            line-height: $lh;
+            margin: 50px 0 30px 0;
+        }
+        & p {
+            @media screen and (max-width: 1024px) {
+                font: {
+                    size: 16px;
+                    weight: 400;
+                }
+                @include width (109%);
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                @include width (105%);
+            }
+            @media screen and (max-width: 540px) {
+                text-align: center;
+                @include width (71%);
+                font-size: 16px;
+                @include mgl (70px);
+            }
+            @media screen and (max-width: 415px) {
+                font-size: 14px;
+                @include mgl (-2px);
+                @include width (100%);
+            }
+            @media screen and (max-width: 412px) {
+                @include mgl (28px);
+                @include width (85%);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (12px);
+                font-size: 13px;
+                @include width (93%);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (20px);
+                @include width (87%);
+                font-size: 13px;
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (8px);
+                font-size: 13px;
+                @include width (94%);
+            }
+            @media screen and (max-width: 280px) {
+                @include mgl (18px);
+                font-size: 12px;
+                @include width (85%);
+            }
+            font: {
+                size: 16px;
+                weight: 400;
+            }
+            color: #616861;
+            margin-top: 30px;
+            @include width (78%);
+        }
+        & .app img {
+            @media screen and (max-width: 540px) {
+                @include width (100%);
+                @include mgl (30px);
+            }
+            @media screen and (max-width: 415px) {
+                @include width (82%);
+                @include mgl (20px);
+            }
+            @media screen and (max-width: 412px) {
+                @include width (82%);
+                @include mgl (25px);
+            }
+            @media screen and (max-width: 360px) {
+                @include width (82%);
+                @include mgl (20px);
+            }
+            @media screen and (max-width: 320px) {
+                @include width (82%);
+                @include mgl (15px);
+            }
+            @include padding (flex);
+            margin-right: 30px;
+            @include mgt (20px);
+            border-radius: 4px;
+            padding-right: 10px;
+            align-items: center;
+            color: $WhiteColor;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.2);
+                transition: all 0.5 linear;
+            }
+        }
+        & .col-md-5 img {
+            @media  screen and (max-width: 1024px) {
+                @include width (273%);
+                @include mgl (-604px);
+                @include mgt (370px);
+                @include mgb (-175px);
+                @include padding (10px);
+            }
+            @media screen and (max-width: 768px) {
+                @include mgt (510px);
+                @include width (300%);
+                @include mgl (-509px);
+                @include mgb (-159px);
+            }
+            @media screen and (max-width: 540px) {
+                @include width (101%);
+                @include padding (5px);
+                @include mgl (5px);
+                @include mgb (-134px);
+                @include mgt (30px);
+            }
+            @media screen and (max-width: 415px) {
+                @include width (108%);
+                @include mgl (-18px);
+                @include mgb (-126px);
+                @include mgt (30px);
+            }
+            @media screen and (max-width: 376px) {
+                @include mgl (-18px);
+                @include mgb (-123px);
+            }
+            @media screen and (max-width: 360px) {
+                @include mgl (-18px);
+                @include mgb (-122px);
+            }
+            @media screen and (max-width: 320px) {
+                @include mgl (-22px);
+                @include mgb (-119px);
+            }
+            @include width (178%);
+            @include padding (1px);
+            @include mgl (-300px);
+            position: relative;
+        }
+    }
+
+    .carousel-2 .owl-nav button.owl-prev,
+    .carousel-2 .owl-nav button.owl-next {
+        border-radius: 50%;
+        border: 2px solid #F5F5F5;
+        padding: 10px 14px !important;
+        outline: none;
+        color: #F5F5F5;
+        margin: 0 10px;
+        position: relative;
+    }
+
+    .carousel-2 .owl-nav button.owl-prev:hover,
+    .carousel-2 .owl-nav button.owl-next:hover {
+        background-color: #F5F5F5;
+        color: #2563ff;
+    }
+
+    .carousel-2 .owl-nav button.owl-next::after  {
+        @media screen and (max-width: 768px) {
+            margin-right: -4px;
+            @include mgt (-5px);
+        }
+        @media screen and (max-width: 320px) {
+            margin-right: -7px;
+            @include mgt (-6px);
+        }
+        @media screen and (max-width: 280px) {
+            margin-right: -10px;
+            @include mgt (-9px);
+        }
+        content: "";
+        @include width (2px);
+        height: 27px;
+        position: absolute;
+        right: 53px;
+        background-color: #F5F5F5;
+
+    }
+
+    .carousel-2 {
+        position: relative;
+    }
+
+    .carousel-2 .owl-nav {
+        @media screen and (max-width: 768px) {
+           @include width (40%);
+           font-size: 12px;
+        }
+        @media screen and (max-width: 376px) {
+            @include width (35%);
+            font-size: 10px;
+        }
+        @media screen and (max-width: 360px) {
+            @include width (36%);
+            font-size: 9px;
+        }
+        @media screen and (max-width: 320px) {
+            @include width (40%);
+            font-size: 8px;
+        }
+        @media screen and (max-width: 280px) {
+            @include width (45%);
+            font-size: 5px;
+            margin-right: -20px;
+        }
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    
+    

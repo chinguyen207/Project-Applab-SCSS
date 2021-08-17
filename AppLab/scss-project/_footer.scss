@@ -1,0 +1,101 @@
+footer {
+    @include mgt (-108px);
+    background-color: #09142e;
+    & img {
+        margin: 70px 0 0px 0;
+    }
+    & ul {
+        margin: 0;
+        padding: 0;
+        &:nth-child(2) li {
+            @include padding (20px);
+            & a {
+                color: $WhiteColor;
+                text-decoration: none;
+                &:hover {
+                    color: #dddddd;
+                }
+            }
+        }
+        &:nth-child(3) li {
+            @include padding (10px);
+            margin: 10px 20px 20px 20px;
+            font-size: 24px;
+            @include mgb (40px);
+        }
+        & li {
+            list-style-type: none;
+            & a i {
+                @include width (2px);
+                @include colorVsfont ($WhiteColor, 10px);
+            }
+        }
+    }
+    & .justify-content-center {
+        @media screen and (max-width: 1024px) {
+            font-size: 25px;
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 15px;
+        }
+        @media screen and (max-width: 415px) {
+            font-size: 13px;
+        }
+        @media screen and (max-width: 412px) {
+            font-size: 15px;
+        }
+        @media screen and (max-width: 376px) {
+            font-size: 12px;
+        }
+        @media screen and (max-width: 360px) {
+            font-size: 11px;
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 7px;
+            @include mgl (19px);
+        }
+        @include mgt (10px);
+        margin: 0px 20px;
+    }
+    & .footer-icon i:hover {
+        color: #eea55e;
+        transform: skewX(160deg);
+        transition: all 0.3s linear;
+    }
+    & p {
+        @media screen and (max-width: 1024px) {
+            font-size: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 22px;
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 16px;
+        }
+        @media screen and (max-width: 415px) {
+            font-size: 16px;
+            @include width (74%);
+            @include mgl (45px);
+        }
+        @media screen and (max-width: 412px) {
+            font-size: 16px;
+            @include width (65%);
+            @include mgl (65px);
+        }
+        @media screen and (max-width: 376px) {
+            font-size: 13px;
+        }
+        @media screen and (max-width: 360px) {
+            font-size: 13px;
+            @include width (70%);
+            @include mgl (50px);
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 13px;
+            @include width (79%);
+            @include mgl (24px);
+        }
+        color: #3d456a;
+        margin: 30px 0 90px 0;
+    }
+}

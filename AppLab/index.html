@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AppLab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--<link rel="stylesheet" href="./assets/css/style.css">-->
+    <!--<link rel="stylesheet" href="./assets/css/responsive.css">-->
+
+    <!--Boostrap CSS-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!--OWL CAROUSEL CSS-->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+        <!--CSS-->
+    <link rel="stylesheet" href="./scss-project/style.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <!--Block Element Modifier-->
+    <header>
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/img/logo.png" alt="AppLab">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#features">Key Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#Pricing">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#Testimonial">Testimonial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#FAQ">FAQ</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-success">Try for free</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--BODY-->
+    <!--Dòng xanh thứ nhất-->
+    <section class="banner" id="home">
+        <div class="container">
+            <div class="row">
+
+                <!--Best left-->
+                <div class="col-md-6">
+                    <div class="banner-text">
+                        <!--<div class="banner-hint">
+                            <img src="./assets/img/tick.png" alt="">
+                            <button>#1 Editiors Choice App of 2020</button>
+                        </div>-->
+                        <h1>Best app for your modern lifestyle</h1>
+                        <p>Increase productivity with a simple ti-do app. app for managing your personal budgets.</p>
+                        <div class="banner-button">
+                            <a href="">
+                                <button class="btn btn-outline-success">Try for free</button>
+                            </a>
+                            <a href="">
+                                Watch demo video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Best right-->
+                <div class="col-md-6">
+                    <img src="./assets/img/1.png" alt="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsor">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Trusted by companies like</p>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item"><img src="./assets/img/slide 1.png" class="img-fluit" alt=""></div>
+                        <div class="item"><img src="./assets/img/slide 2.png" class="img-fluit" alt=""></div>
+                        <div class="item"><img src="./assets/img/slide 3.png" class="img-fluit" alt=""></div>
+                        <div class="item"><img src="./assets/img/slide 4.png" class="img-fluit" alt=""></div>
+                        <div class="item"><img src="./assets/img/slide 5.png" class="img-fluit" alt=""></div>
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+                        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+                        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Dòng xanh thứ hai-->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="row">
+
+                <!-- features-left -->
+                <div class="col-md-6 features-left">
+                    <img src="./assets/img/2.png" alt="" class="img-fluid">
+                </div>
+
+
+                <!-- features-right -->
+                <div class="col-md-6">
+                    <h1>Awesome apps<br> features</h1>
+                    <p class="features-pera">Increase productivity with a simple to-do app. app for managing your
+                        personal budgets.</p>
+
+                    <div class="features-items">
+                        <div class="item-1">
+                            <div class="row">
+                                <div class="col-md-3 h4-1">
+                                    <img src="./assets/img/21.png" alt="">
+                                </div>
+                                <div class="col-md-7 item-h4-1">
+                                    <h4>Fast Performance</h4>
+                                    <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                        tests.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-1">
+                            <div class="row">
+                                <div class="col-md-3 h4-2">
+                                    <img src="./assets/img/22.png" alt="">
+                                </div>
+                                <div class="col-md-7 item-h4-2">
+                                    <h4>Prototyping</h4>
+                                    <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                        tests.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-1">
+                            <div class="row">
+                                <div class="col-md-3 h4-3">
+                                    <img src="./assets/img/23.png" alt="">
+                                </div>
+                                <div class="col-md-7 item-h4-3">
+                                    <h4>Vector Editing</h4>
+                                    <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                        tests.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--Dòng xanh thứ ba-->
+
+                <!--Smart up-->
+                <div class="row smart">
+                    <div class="col-md-6">
+                        <h1>Smart jackpots that<br> you may love this<br> anytime & anywhere</h1>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>The rise of mobile devices transforms the way we consume information entirely and the world's
+                            most elevant channels such as Facebook.</p>
+                    </div>
+                </div>
+
+                <!--Smart down-->
+                <div class="row smart-1 ">
+                    <div class="col-md-4">
+                        <div class="icon">
+                            <div>
+                                <img src="./assets/img/31.png" alt="">
+                            </div>
+                        </div>
+                        <div class="comment item-h4-31">
+                            <h4>Automatic Payouts</h4>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="icon">
+                            <div>
+                                <img src="./assets/img/32.png" alt="">
+                            </div>
+                        </div>
+                        <div class="comment item-h4-32">
+                            <h4>Network Effect</h4>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="icon">
+                            <div>
+                                <img src="./assets/img/33.png" alt="">
+                            </div>
+                        </div>
+                        <div class="comment item-h4-33">
+                            <h4>Bigger Rewards Method</h4>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--Dòng xanh thứ tư-->
+
+
+                <!--Designed left-->
+                <div class="row designed">
+                    <div class="col-md-6">
+                        <img src="./assets/img/4.png" alt="" class="img-fluid">
+                    </div>
+
+                    <!--Designed right-->
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4 d-flex justify-content-center flex-column">
+                        <h1>Designed & built by the latest code integration</h1>
+                        <p>The rise of mobile devices transforms the way we consume information entirely and the world's
+                            most elevant channels such as Facebook.</p>
+                        <button class="btn btn-outline-success">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Dòng xanh thứ năm-->
+    <section class="Why text-center">
+        <div class="container">
+            <div class="row">
+                <!--Why up-->
+                <div class="col-md-12">
+                    <h1>Why you should choose<br>our app</h1>
+                    <p>The rise of mobile devices transforms the way we consume information entirely<br>and the world's
+                        most elevant channels such as Facebook.</p>
+                </div>
+            </div>
+
+            <!--Why down-->
+            <div class="line1">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="icon">
+                            <div>
+                                <img src="./assets/img/51.png" alt="">
+                            </div>
+                        </div>
+                        <h4>App Development</h4>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="icon">
+                            <div>
+                                <img src="./assets/img/52.png" alt="">
+                            </div>
+                        </div>
+                        <h4>10 Times Award</h4>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="icon">
+                            <div>
+                                <img src="./assets/img/53.png" alt="">
+                            </div>
+                        </div>
+                        <h4>Cloud Storage</h4>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line2">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="icon">
+                            <div>
+                                <img src="./assets/img/54.png" alt="">
+                            </div>
+                        </div>
+                        <h4>Customization</h4>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="icon">
+                            <div>
+                                <img src="./assets/img/55.png">
+                            </div>
+                        </div>
+                        <h4>UX Planning</h4>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="icon">
+                            <div>
+                                <img src="./assets/img/56.png">
+                            </div>
+                        </div>
+                        <h4>Customer Support</h4>
+                        <p>Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Dòng xanh thứ sáu-->
+    <section class="Ultimate">
+        <div class="container">
+            <div class="row">
+                <!--Ultimate up-->
+                <div class="col-md-7 pe-0">
+                    <h1>Ultimate features that we built</h1>
+                    <p>The rise of mobile devices transforms the way we consume information entirely.</p>
+
+
+                    <!--Ultimate down-->
+
+                    <!--Ultimate left-->
+                    <div class="line1">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="icon">
+                                    <div>
+                                        <img src="./assets/img/51.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="common">
+                                    <h4>App Development</h4>
+                                    <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                        tests.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="icon">
+                                    <div>
+                                        <img src="./assets/img/55.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="common">
+                                    <h4>UX Planning</h4>
+                                    <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                        tests.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line2">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="icon">
+                                    <div>
+                                        <img src="./assets/img/53.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="common">
+                                    <h4>Cloud Storage</h4>
+                                    <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                        tests.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="icon">
+                                    <div>
+                                        <img src="./assets/img/56.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="common">
+                                    <h4>Customer Support</h4>
+                                    <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                        tests.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-success">See all</button>
+                </div>
+
+                <!--Ultimate right-->
+                <div class="col-md-5 pe-0">
+                    <img src="./assets/img/6.png" class="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Dòng xanh thứ bảy-->
+    <section class="Pricing" id="Pricing">
+        <div class="container">
+            <div class="row">
+                <!--Get up-->
+                <div class="col-md-12">
+                    <h1>Get awesome features, without<br>extra charges</h1>
+                    <p>The rise of mobile devices transforms the way we consume information entirely<br>and the world's
+                        most elevant channels such as Facebook.</p>
+                </div>
+
+                <!--Get down-->
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8">
+                    <div class="trigger">
+                        <button class="active">Monthly</button>
+                        <button class="inactive">Annually</button>
+                    </div>
+                </div>
+
+                <div class="price-table">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <div class="card table-active">
+                                <div class="card-header">
+                                    <h1>$0<span>/month</span></h1>
+                                    <h4>Business Class</h4>
+                                    <p>For small teams or office</p>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Drag & Drop Builder</li>
+                                        <li>1,000's of Templates</li>
+                                        <li>Blog Support Tools</li>
+                                        <li>eCommerce Store</li>
+                                    </ul>
+                                    <button class="btn btn-outline-success">Start free trial</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card table-inactive">
+                                <div class="card-header">
+                                    <h1>$99<span>/month</span></h1>
+                                    <h4>Pro Master</h4>
+                                    <p>For Best opportunities</p>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Drag & Drop Builder</li>
+                                        <li>1,000's of Templates</li>
+                                        <li>Blog Support Tools</li>
+                                        <li>eCommerce Store</li>
+                                    </ul>
+                                    <button class="btn btn-outline-success">Subscribe Now</button>
+                                    <a href="">Or Start 14 days trail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Dòng xanh thứ tám-->
+    <section class="Testimonial container" id="Testimonial">
+        <div class="row">
+
+            <!--Meet left-->
+            <div class="col-md-6 my-auto">
+                <img src="./assets/img/review img.png" class="img-fluit" alt="">
+            </div>
+
+            <!--Meet right-->
+            <div class="col-md-6 ">
+                <h1>Meet Client Satisfaction by using product</h1>
+                <p>The rise of mobile devices transforms the way we consume elevant channels such as Facebook.</p>
+                <div class="owl-carousel owl-theme carousel-2">
+                    <div class="item">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h5>User friendly & Customizable</h5>
+                        <p>Bring to the table win-win survival strategies to ensure proactive domi-nation. At the end of
+                            the day, going forward a new normal that has evolved from generation X is on the runway
+                            heading towards a streamlined cloud. User generated
+                            content in real-time will have multiple touchpoints for offshoring.</p>
+                        <div class="d-flex align-items-center">
+                            <img style="width:20%" class="" src="./assets/img/client 4.png" alt="">
+                            <div style="width: 80%;margin-left: 20px;" ;>
+                                <h6 style="text-align: left;
+                                           margin-left: 0;
+                                           padding-left: 0; ">Zoltan Nemeth</h6>
+                                <p style="text-align: left;
+                                          margin-left: 0;
+                                          padding-left: 0; ">CEO of Pixler Lab</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h5>User friendly & Customizable</h5>
+                        <p>Bring to the table win-win survival strategies to ensure proactive domi-nation. At the end of
+                            the day, going forward a new normal that has evolved from generation X is on the runway
+                            heading towards a streamlined cloud. User generated
+                            content in real-time will have multiple touchpoints for offshoring.</p>
+                        <div class="d-flex align-items-center">
+                            <img style="width:20%" class="" src="./assets/img/client 4.png" alt="">
+                            <div style="width: 80%;margin-left: 20px;" ;>
+                                <h6 style="text-align: left;
+                                           margin-left: 0;
+                                           padding-left: 0; ">Zoltan Nemeth</h6>
+                                <p style="text-align: left;
+                                          margin-left: 0;
+                                          padding-left: 0; ">CEO of Pixler Lab</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h5>User friendly & Customizable</h5>
+                        <p>Bring to the table win-win survival strategies to ensure proactive domi-nation. At the end of
+                            the day, going forward a new normal that has evolved from generation X is on the runway
+                            heading towards a streamlined cloud. User generated
+                            content in real-time will have multiple touchpoints for offshoring.</p>
+                        <div class="d-flex align-items-center">
+                            <img style="width:20%" class="" src="./assets/img/client 4.png" alt="">
+                            <div style="width: 80%;margin-left: 20px;" ;>
+                                <h6 style="text-align: left;
+                                           margin-left: 0;
+                                           padding-left: 0; ">Zoltan Nemeth</h6>
+                                <p style="text-align: left;
+                                          margin-left: 0;
+                                          padding-left: 0; ">CEO of Pixler Lab</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Dòng xanh thứ chín-->
+    <section class="FAQ container mb-5" id="FAQ">
+        <div class="row">
+
+            <!--Questions up-->
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h2 class="text-center">Frequently asked questions</h2>
+                <p class="text-center">The rise of mobile devices transforms the way we consume information
+                    entirely<br>and the world's most elevant channels such as Facebook.</p>
+
+                <!--Questions down-->
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">App installation failed, how to update system
+                                information?</button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                    Iterative approaches to corporate strategy foster collaborative thinking to further
+                                    the overall value proposition. Organically grow the holistic
+                                    world view of disruptive innovation via workplace diversity and empowerment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">Website response taking time, how to improve?</button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                    Iterative approaches to corporate strategy foster collaborative thinking to further
+                                    the overall value proposition. Organically grow the holistic
+                                    world view of disruptive innovation via workplace diversity and empowerment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">New update fixed all bug and issues</button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                    Iterative approaches to corporate strategy foster collaborative thinking to further
+                                    the overall value proposition. Organically grow the holistic
+                                    world view of disruptive innovation via workplace diversity and empowerment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">How to contact with riders emergency?</button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                                    Iterative approaches to corporate strategy foster collaborative thinking to further
+                                    the overall value proposition. Organically grow the holistic
+                                    world view of disruptive innovation via workplace diversity and empowerment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Dòng xanh thứ mười-->
+    <section class="Download">
+        <div class="container">
+            <div class="row">
+
+                <!--Download left-->
+                <div class="col-md-7">
+                    <h1>Download our App now!</h1>
+                    <p>The rise of mobile devices transforms the way we consume information entirely and the world's
+                        most elevant channels such as Facebook.</p>
+                    <div class="d-flex">
+                        <div class="app d-flex">
+                            <img src="./assets/img/google-play.png" class="img-fluit" alt="">
+                        </div>
+                        <div class="app d-inline-flex">
+                            <img src="./assets/img/app-store.png" class="img-fluit" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Download right-->
+                <div class="col-md-5">
+                    <img src="./assets/img/app bg.png" alt="" class="full-witth">
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-5">
+                    <a>
+                        <img src="./assets/img/logo footer.png" alt="">
+                    </a>
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Key Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Testiminial</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+
+
+                    <ul class="d-flex justify-content-center footer-icon">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-hashtag"></i></a></li>
+                        <li><a href=""><i class="fa fa-github"></i></a></li>
+                    </ul>
+                    <p>Copyright Arifur Rahman Tushar 2019. All right Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JavaScript code for Bootstrap starts here-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript code for Bootstrap ends here-->
+
+
+
+    <!-- Custom JS code starts here -->
+    <!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/owl.carousel.js"></script>
+    <!-- Custom JS code ends here -->
+    <!-- owl carousel code starts here -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                margin: 20,
+                nav: true,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 1500,
+                autoplayHoverPause: true,
+
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    320: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        })
+
+        var owl2 = $('.carousel-2');
+        owl2.owlCarousel({
+            margin: 10,
+            nav: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true,
+            dots: false,
+            nav: true,
+            navText: ["<i class='fas fa-long-arrow-alt-left'></i>", "<i class='fas fa-long-arrow-alt-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+    <!-- owl carousel code ends here -->
+test: <i class='fas fa-long-arrow-alt-left'></i>
+</body>
+
+</html>
