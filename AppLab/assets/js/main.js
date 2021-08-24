@@ -1,0 +1,15 @@
+$(document).ready(function(){
+    $('.price-table__two').hide();
+    $('button.button__one').click(function(){
+        $('button.button__one').removeClass('inactive').addClass('active');
+        $('button.button__two').removeClass('active').addClass('inactive');
+        $('.price-table__one').show();
+        $('.price-table__two').hide();
+    })
+    $('button.button__two').click(function(){
+        $('button.button__two').removeClass('inactive').addClass('active');
+        $('button.button__one').removeClass('active').addClass('inactive');
+        $('.price-table__two').show();
+        $('.price-table__one').hide();
+    })
+})

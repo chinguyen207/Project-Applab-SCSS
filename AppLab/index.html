@@ -460,12 +460,12 @@
 
                 <div class="col-md-8">
                     <div class="trigger">
-                        <button class="active">Monthly</button>
-                        <button class="inactive">Annually</button>
+                        <button class="button__one active">Monthly</button>
+                        <button class="button__two inactive">Annually</button>
                     </div>
                 </div>
 
-                <div class="price-table">
+                <div class="price-table price-table__one">
                     <div class="row">
                         <div class="col-md-2"></div>
                         <div class="col-md-4">
@@ -510,6 +510,54 @@
                     </div>
                 </div>
                 <div class="col-md-2"></div>
+
+
+                <div class="price-table price-table__two">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <div class="card table-active">
+                                <div class="card-header">
+                                    <h1>$0<span>/annual</span></h1>
+                                    <h4>Business Class</h4>
+                                    <p>For small teams or office</p>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Drag & Drop Builder</li>
+                                        <li>1,000's of Templates</li>
+                                        <li>Blog Support Tools</li>
+                                        <li>eCommerce Store</li>
+                                    </ul>
+                                    <button class="btn btn-outline-success">Start free trial</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card table-inactive">
+                                <div class="card-header">
+                                    <h1>$999<span>/annual</span></h1>
+                                    <h4>Pro Master</h4>
+                                    <p>For Best opportunities</p>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Drag & Drop Builder</li>
+                                        <li>1,000's of Templates</li>
+                                        <li>Blog Support Tools</li>
+                                        <li>eCommerce Store</li>
+                                    </ul>
+                                    <button class="btn btn-outline-success">Subscribe Now</button>
+                                    <a href="">Or Start 14 days trail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+
 
             </div>
         </div>
@@ -568,10 +616,10 @@
                             <div style="width: 80%;margin-left: 20px;" ;>
                                 <h6 style="text-align: left;
                                            margin-left: 0;
-                                           padding-left: 0; ">Zoltan Nemeth</h6>
+                                           padding-left: 0; ">Lois Lane</h6>
                                 <p style="text-align: left;
                                           margin-left: 0;
-                                          padding-left: 0; ">CEO of Pixler Lab</p>
+                                          padding-left: 0; ">CEO of Daily Planet</p>
                             </div>
                         </div>
                     </div>
@@ -581,7 +629,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
-                        <h5>User friendly & Customizable</h5>
+                        <h5>Good support</h5>
                         <p>Bring to the table win-win survival strategies to ensure proactive domi-nation. At the end of
                             the day, going forward a new normal that has evolved from generation X is on the runway
                             heading towards a streamlined cloud. User generated
@@ -591,10 +639,10 @@
                             <div style="width: 80%;margin-left: 20px;" ;>
                                 <h6 style="text-align: left;
                                            margin-left: 0;
-                                           padding-left: 0; ">Zoltan Nemeth</h6>
+                                           padding-left: 0; ">John Doe</h6>
                                 <p style="text-align: left;
                                           margin-left: 0;
-                                          padding-left: 0; ">CEO of Pixler Lab</p>
+                                          padding-left: 0; ">CEO of Acme</p>
                             </div>
                         </div>
                     </div>
@@ -746,6 +794,11 @@
     </footer>
 
 
+    <p id="back-to-top">
+        <a href="#"><i class="scroll-top far fa-arrow-up"></i></a>
+    </p>
+
+
 
 
 
@@ -766,6 +819,7 @@
     <!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/owl.carousel.js"></script>
+    <script src="./assets/js/main.js"></script>
     <!-- Custom JS code ends here -->
     <!-- owl carousel code starts here -->
     <script type="text/javascript">
@@ -820,6 +874,33 @@
             }
         })
     </script>
+
+
+    <!--Scoll-to-top-->
+  <script type="text/javascript"> 
+    jQuery(document).ready(function ($) {
+  if ($(window).scrollTop() > 200) {
+              $('#back-to-top').fadeIn();
+      } else {
+              $('#back-to-top').fadeOut();
+      }
+
+  $(window).scroll(function () {
+          if ($(this).scrollTop() > 200) {
+          $('#back-to-top').fadeIn();
+          } else {
+                  $('#back-to-top').fadeOut();
+          }
+  });
+
+  $('#back-to-top').click(function () {
+          $("html, body").animate({
+                  scrollTop: 0
+          }, 600);
+          return false;
+  });
+});
+</script>
     <!-- owl carousel code ends here -->
 test: <i class='fas fa-long-arrow-alt-left'></i>
 </body>

@@ -57,10 +57,11 @@ footer {
         @include mgt (10px);
         margin: 0px 20px;
     }
-    & .footer-icon i:hover {
-        color: #eea55e;
-        transform: skewX(160deg);
-        transition: all 0.3s linear;
+    & .footer-icon i {
+        color: #273043;
+        &:hover {
+            color: #fff;
+        }
     }
     & p {
         @media screen and (max-width: 1024px) {

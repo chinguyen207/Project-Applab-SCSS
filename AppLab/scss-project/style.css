@@ -5239,8 +5239,6 @@ header .btn-outline-success:hover {
 .Download .app img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-transition: all 0.5 linear;
-  transition: all 0.5 linear;
 }
 
 .Download .col-md-5 img {
@@ -5402,6 +5400,35 @@ header .btn-outline-success:hover {
   }
 }
 
+#back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  z-index: 9999;
+}
+
+#back-to-top a {
+  display: block;
+  background: #2500f9 !important;
+  text-decoration: none;
+  border-radius: 500px;
+}
+
+#back-to-top .scroll-top {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 7px;
+  font-size: 19px;
+  line-height: 35px;
+  color: #FFF;
+  text-align: center;
+}
+
+#back-to-top .scroll-top:hover {
+  opacity: 0.6;
+}
+
 footer {
   margin-top: -108px;
   background-color: #09142e;
@@ -5494,12 +5521,12 @@ footer .justify-content-center {
   }
 }
 
+footer .footer-icon i {
+  color: #273043;
+}
+
 footer .footer-icon i:hover {
-  color: #eea55e;
-  -webkit-transform: skewX(160deg);
-          transform: skewX(160deg);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  color: #fff;
 }
 
 footer p {

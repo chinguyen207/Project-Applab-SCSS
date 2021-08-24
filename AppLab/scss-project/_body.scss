@@ -3269,7 +3269,7 @@
             cursor: pointer;
             &:hover {
                 transform: scale(1.2);
-                transition: all 0.5 linear;
+                //transition: all 0.5 linear;
             }
         }
         & .col-md-5 img {
@@ -3386,6 +3386,33 @@
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+
+
+    #back-to-top {
+        position: fixed;
+        right: 30px;
+        bottom: 60px;
+        z-index: 9999;
+    }
+    #back-to-top a {
+        display: block;
+        background: #2500f9 !important;
+        text-decoration: none;
+        border-radius: 500px; 
+    }
+    #back-to-top .scroll-top {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin-bottom: 7px;
+        font-size: 19px;
+        line-height: 35px;
+        color: #FFF;
+        text-align: center;
+        &:hover {
+           opacity: 0.6;
+        }
     }
 
     
